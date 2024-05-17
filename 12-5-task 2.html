@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML </title>
+    <style>
+        .pets,th,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+
+        .time,
+        th {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        .time,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+    </style>
+
+</head>
+
+<body>
+    <h1> Image in Tables </h1>
+    <hr />
+    <h3>What are your favorite pets?</h3>
+    <table class="pets">
+        <tr>
+            <th>Pet images</th>
+            <th>More facts about pets</th>
+        </tr>
+        <tr>
+            <td><img src="horse.jfif" C:\Users\Orange\Downloads\horse.jfif"" alt="horse"
+                    style="width: 200px; height: 200px;" title=" Horse"></td>
+            <td><a href="https://en.wikipedia.org/wiki/Horse">Horse</a></td>
+        </tr>
+        <td><img src="dogs.jpg" C:\Users\Orange\Downloads\horse.jfif" alt="dogs" style="width: 200px; height=" 200px;
+                title=" Dog"></td>
+        <td><a href="https://en.wikipedia.org/wiki/Cat">dogs</a></td>
+        <tr>
+            <td><img src="cats.jfif" C:\Users\Orange\Downloads\horse.jfif" alt="cats" style="width: 200px;"
+                    height=200px; title=" Cat"></td>
+            <td><a href="https://en.wikipedia.org/wiki/Dog">cats</a></td>
+        </tr>
+    </table>
+    <h1 style="margin-left: 450px;">TIME TABLE</h1>
+    <table class="time">
+        <tr>
+            <th>Day/Period</th>
+            <th>I <br> 9:30-10:20</th>
+            <th>II<br>10:20-11:10</th>
+            <th>III<br>11:10-12:00</th>
+            <th>12:00-12:40</th>
+            <th>IV<br>12:40-1:30</th>
+            <th>V<br>1:30-2:20</th>
+            <th>VI<br>2:20-3:10</th>
+            <th>VII<br>3:10-4:00</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td>Eng</td>
+            <td>Mat</td>
+            <td>Che</td>
+            <td rowspan="6"
+                style="writing-mode: vertical-rl;text-orientation: upright; font-weight: bold; text-align: center;">
+                LUNCH</td>
+            <td colspan="3">LAB</td>
+            <td>Phy</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td colspan="3">LAB</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td>Mat</td>
+            <td>SPORTS</td>
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <td>Mat</td>
+            <td>Phy</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td colspan="3">LIBRARY</td>
+        </tr>
+        <tr>
+            <th>Tursday</th>
+            <td>Phy</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td colspan="3">LAB</td>
+            <td>Mat</td>
+        </tr>
+        <tr>
+            <th>Friday</th>
+            <td colspan="3">LAB</td>
+            <td>Mat</td>
+            <td>Che</td>
+            <td>Eng</td>
+            <td>Phy</td>
+        </tr>
+        <tr>
+            <th>Suterday</th>
+            <td>Eng</td>
+            <td>Chy</td>
+            <td>Mat</td>
+            <td colspan="3">SEMINAR</td>
+            <td>SPORTS</td>
+        </tr>
+    </table>
+    <p>Preceding Text</p>
+    <ol type="I">
+        <li>list item 1
+            <ol type="a">
+                <li>Nested item 1.1</li>
+                <li>Nested item 1.2</li>
+            </ol>
+        </li>
+        <li>list item 2
+            <ol type="1">
+                <li>Nested item 2.1</li>
+                <li>Nested item 2.2</li>
+        </li>
+        <ul style="list-style-type: circle;">
+            <li>Nested item 2.2.1</li>
+            <li>Nested item 2.2.2
+                <ul>
+                    <li>Nested item 2.2.2.1</li>
+                    <li> Nested item 2.2.2.2</li>
+                </ul>
+            </li>
+            <li>Nested item 2.2.3</li>
+        </ul>
+    </ol>
+    </li>
+    <li>list item 3
+        <ul style=" list-style-type: disc;">
+            <li>Nested item 3.1</li>
+            <li>Nested item 3.2</li>
+            <li>Nested item 3.3</li>
+        </ul>
+    </li>
+    </ol>
+    <h2>Registration Form !</h2>
+    <form
+        style="border: 1px solid black; padding-left: 20px; padding-top: 20px; background-color: rgb(228, 236, 228); margin-right: 1000px;">
+        <h3> Personal details</h3>
+        <hr>
+        <label for="name">First name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+        <lable for="lname">Last name:</lable>
+        <input type="text" id="lname" name="iname" placeholder="Enter your last name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+        <label for="text" id="gender" name="gender">Gender:</label>
+        <input type="radio" name="Gender" value="Male">Male
+        <input type="radio" name="Gender" value="Female">Female
+        <br><br>
+        <label for="City">City:</label>
+        <select id="City" name="City">
+            <option value="Ajloun">Ajloun</option>
+            <option value="Amman">Amman</option>
+            <option vakue="Irbid">Irbid</option>
+        </select><br><br>
+        <label for="sign in"></label>
+        <input type="submit" id="sign in" name="sign in" value="Sign in"><br><br>
+    </form>
+    <h2> Our First Form !</h2>
+    <div>
+        <form
+            style="border: 2px solid black; padding-left: 10px; padding-top: 10px; background-color: rgb(173, 124, 60); margin-right: 995px;">
+            <label for="text">Username:</label>
+            <input type="text" id="uname" id="uname"><br><br>   
+            <label for="password"> Password:</label>
+            <input for="Password" id="text" name="text"><br><br>
+            <label for="text"></label>
+            <input type="submit" id="text" name="text" value="Login"><br><br>
+        </form>
+    </div>
+    <div>
+        <h2> Regestration Form </h2>
+        
+        <fieldset style="background-color: rgb(233, 227, 219); height:100px; margin-right:1000px; height: 220px;">
+        <legend>Personal details</legend>
+            <label for="first-name">First name:</label>
+            <input type="last-name" id="text" name="text"><br><br>
+            <labe for="last-name">Last name: </label>
+                <input type="text" id="last-name" name="last-name"><br><br>
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="gender" name="gender">Male
+                <input type="radio" id="gender" name="gender">Female
+        </fieldset>
+    </div>
+    <br>
+
+    
+<fieldset style="background-color: rgb(233, 227, 219); height:100px; margin-right:1000px;">
+  <legend>City</legend>
+      <br><br>
+  <label for="City">City:</label>
+        <select id="city" name="city">
+            <option value="karak">Karak</option>
+            <option value="Amman">Amman</option>
+            <option value="Irbid">Irbid</option>
+        </select>
+</fieldset>
+    <div style="padding: 20px;
+    padding-left: 75px;
+   >
+        <label for=" subscibe"></label>
+        <input type="submit" id="subscribe" name="subscribe" value="Subscribe" </div>
+
+</body>
+
+</html>
